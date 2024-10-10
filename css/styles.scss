@@ -1,0 +1,292 @@
+// Predictive Fitness Global Styles
+
+
+/* Custom Styles */
+
+// Podcast Styles
+
+.podcast_cohost-list-item-inline:after {
+	content: ", ";
+  padding-right:4px;
+}
+
+.podcast_cohost-list-item-inline:last-child:after {
+	content: "";
+}
+
+// Header Accents
+
+.header-accent, .cta-accent {
+    z-index:1;
+    position:relative;
+}
+
+.is-accent-red {
+  z-index: 1;
+  position:relative;
+}
+
+.header-accent:after,
+.is-accent-red:after {
+    content: " ";
+    display: inline-block;
+    height: 30px;
+    background: #cf312c;
+    width: 405px;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+.header-accent-dark:after,
+.is-accent-dark:after {
+    content: " ";
+    display: inline-block;
+    height: 20px;
+    background: #222222;
+    width: 180px;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+
+.cta-accent:after {
+    content: " ";
+    display: inline-block;
+    height: 20px;
+    background: #cf312c;
+    width: 405px;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+.cta-accent-dark:after {
+    content: " ";
+    display: inline-block;
+    height: 20px;
+    background: #222222;
+    width: 180px;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+@media screen and (max-width: 991px) {
+	.header-accent-dark:after {
+  	right:100px;
+    width:180px;
+    right:10px;
+  }
+  .header-accent:after {
+  	right:100px;
+    width:180px;
+    right:240px;
+   }
+	.cta-accent-dark:after {
+  	right:100px;
+    width:180px;
+    right:10px;
+  }
+  .cta-accent:after {
+  	right:100px;
+    width:180px;
+    right:240px;
+   }
+}
+@media screen and (max-width: 480px) {
+	.header-accent-dark:after {
+  	right:100px;
+    width:180px;
+    right:0px;
+  }
+  .header-accent:after {
+  	right:100px;
+    width:100px;
+    right:70px;
+   }
+	.cta-accent-dark:after {
+  	right:100px;
+    width:180px;
+    right:0px;
+  }
+  .cta-accent:after {
+  	right:100px;
+    width:100px;
+    right:70px;
+   }
+}
+
+// Skew Styles
+
+.hero-subheader-block {
+	clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.feature-block {
+	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+
+.feature-block-reverse {
+	clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+}
+
+.angled-section-offset-top {
+	margin-top:-150px !important;
+}
+
+.angled-section-offset-top-medium {
+	margin-top:-200px !important;
+}
+
+.angled-section-offset-top-large {
+	margin-top:-250px !important;
+}
+
+.angled-section-offset-bottom {
+	margin-bottom:-150px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .angled-section-offset-top {
+		margin-top:-150px;
+   }
+
+   .angled-section-offset-bottom {
+     margin-bottom:-150px;
+   }
+}
+@media screen and (max-width: 480px) {
+  .angled-section-offset-top {
+		margin-top:-150px;
+   }
+
+   .angled-section-offset-bottom {
+     margin-bottom:-150px;
+   }
+}
+
+// Form Styles
+
+
+form.infusion-form {
+  font-family:'proxima-nova', sans-serif;
+  font-size:18px;
+  max-width:380px;
+  margin:0 auto;
+}
+
+form.infusion-form .infusion-field {
+  text-align:left !important;
+}
+
+form.infusion-form label.text-input {
+ display:block;
+ margin-bottom:4px;
+ color:white;
+ text-align:left !important;
+}
+
+form.infusion-form input.text-input {
+ padding-left:16px;
+ height:40px;
+ background-color:#e5361d;
+ border:2px solid transparent;
+ border-radius:4px;
+ width:100%;
+ max-width:100%;
+ height:52px;
+ margin-bottom:16px;
+ outline: none;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ color:white;
+}
+
+form.infusion-form input.text-input:focus {
+ border-color:white;
+ box-shadow: none;
+ outline: none;
+ transition: all 200ms ease-in-out;
+}
+
+form.infusion-form input.text-input:focus, form.infusion-form textarea.text-input:focus, form.infusion-form select.text-input:focus {
+  border-color:white;
+  box-shadow: none;
+  outline: none;
+}
+
+form.infusion-form input.text-input::placeholder {
+ color:white;
+ font-style: italic;
+}
+
+form.infusion-form input[type="checkbox"] {
+  background-color: #e5361d;
+  margin: 0;
+  font: inherit;
+  color: #e5361d;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #349b40;
+  border-radius: .25em;
+  position: relative;
+  top: 5px;
+}
+
+form.infusion-form .infusion-checkbox {
+  text-align:left;
+  color:white;
+}
+
+form.infusion-form .infusion-label-checkbox {
+  display:inline-block;
+  margin-left:8px;
+}
+
+form.infusion-form .infusion-submit button {
+  height:auto;
+  font-size:18px;
+  font-family:'proxima-nova', sans-serif;
+  padding:16px 32px;
+  background-color:#e5361d;
+  color: white;
+  border:none;
+  border-radius:80px;
+  font-weight:900;
+  font-style: italic;
+  text-transform: uppercase;
+  display:block;
+  width:100%;
+}
+
+// Embeds
+
+.youtube-embed {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+// Utility Classes & Fixes
+
+a.header-nav-link.current {
+  color:var(--colors--brand-primary) !important;
+}
+
+.animate-all {
+  transition: all 200ms ease-in-out;
+}
+
+.is-background-overlay {
+		background-color: #E40B14;
+    opacity: 0.97;
+    mix-blend-mode: multiply;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+// End of Doc
