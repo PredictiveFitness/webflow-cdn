@@ -78,19 +78,16 @@
     width: 180px;
     right: 10px;
   }
-
   .header-accent:after {
     right: 100px;
     width: 180px;
     right: 240px;
   }
-
   .cta-accent-dark:after {
     right: 100px;
     width: 180px;
     right: 10px;
   }
-
   .cta-accent:after {
     right: 100px;
     width: 180px;
@@ -103,19 +100,16 @@
     width: 180px;
     right: 0px;
   }
-
   .header-accent:after {
     right: 100px;
     width: 100px;
     right: 70px;
   }
-
   .cta-accent-dark:after {
     right: 100px;
     width: 180px;
     right: 0px;
   }
-
   .cta-accent:after {
     right: 100px;
     width: 100px;
@@ -123,15 +117,18 @@
   }
 }
 .hero-subheader-block {
-  clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+  -webkit-clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+          clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
 }
 
 .feature-block {
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 }
 
 .feature-block-reverse {
-  clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+  -webkit-clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+          clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
 }
 
 .angled-section-offset-top {
@@ -154,7 +151,6 @@
   .angled-section-offset-top {
     margin-top: -150px;
   }
-
   .angled-section-offset-bottom {
     margin-bottom: -150px;
   }
@@ -163,7 +159,6 @@
   .angled-section-offset-top {
     margin-top: -150px;
   }
-
   .angled-section-offset-bottom {
     margin-bottom: -150px;
   }
@@ -197,7 +192,6 @@ form.infusion-form input.text-input {
   height: 52px;
   margin-bottom: 16px;
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: white;
 }
@@ -222,9 +216,20 @@ form.infusion-form input.text-input:focus, form.infusion-form textarea.text-inpu
   outline: none;
 }
 
+form.infusion-form input.text-input::-moz-placeholder {
+  color: white;
+  font-style: italic;
+}
+
 form.infusion-form input.text-input::placeholder {
   color: white;
   font-style: italic;
+}
+form.infusion-form input.text-input::-moz-placeholder.light-mode {
+  color: #7b7b7b;
+}
+form.infusion-form input.text-input::placeholder.light-mode {
+  color: #7b7b7b;
 }
 
 form.infusion-form input[type=checkbox] {
@@ -284,4 +289,4 @@ a.header-nav-link.current {
   opacity: 0.97;
   mix-blend-mode: multiply;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
+}/*# sourceMappingURL=styles.css.map */
