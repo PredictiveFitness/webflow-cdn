@@ -211,6 +211,9 @@ form.infusion-form input.text-input {
       &:focus {
         border-color: #333;
       }
+      &::placeholder {
+        color: #7b7b7b;
+      }
   }
 }
 
@@ -230,9 +233,6 @@ form.infusion-form input.text-input:focus, form.infusion-form textarea.text-inpu
 form.infusion-form input.text-input::placeholder {
  color:white;
  font-style: italic;
-  &.light-mode {
-    color: #7b7b7b;
-  }
 }
 
 form.infusion-form input[type="checkbox"] {

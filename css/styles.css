@@ -202,6 +202,12 @@ form.infusion-form input.text-input.light-mode {
 form.infusion-form input.text-input.light-mode:focus {
   border-color: #333;
 }
+form.infusion-form input.text-input.light-mode::-moz-placeholder {
+  color: #7b7b7b;
+}
+form.infusion-form input.text-input.light-mode::placeholder {
+  color: #7b7b7b;
+}
 
 form.infusion-form input.text-input:focus {
   border-color: white;
@@ -224,12 +230,6 @@ form.infusion-form input.text-input::-moz-placeholder {
 form.infusion-form input.text-input::placeholder {
   color: white;
   font-style: italic;
-}
-form.infusion-form input.text-input::-moz-placeholder.light-mode {
-  color: #7b7b7b;
-}
-form.infusion-form input.text-input::placeholder.light-mode {
-  color: #7b7b7b;
 }
 
 form.infusion-form input[type=checkbox] {
