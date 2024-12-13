@@ -203,10 +203,10 @@ form.infusion-form input.text-input.light-mode:focus {
   border-color: #333;
 }
 form.infusion-form input.text-input.light-mode::-moz-placeholder {
-  color: #7b7b7b;
+  color: #7b7b7b !important;
 }
 form.infusion-form input.text-input.light-mode::placeholder {
-  color: #7b7b7b;
+  color: #7b7b7b !important;
 }
 
 form.infusion-form input.text-input:focus {
