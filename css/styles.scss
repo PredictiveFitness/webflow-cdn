@@ -173,7 +173,6 @@
 
 // Form Styles
 
-
 form.infusion-form {
   font-family:'proxima-nova', sans-serif;
   font-size:18px;
@@ -206,6 +205,13 @@ form.infusion-form input.text-input {
  -webkit-box-shadow: none;
  box-shadow: none;
  color:white;
+   &.light-mode {
+      background-color: #e8e8e8;
+      color: #333;
+      &:focus {
+        border-color: #333;
+      }
+  }
 }
 
 form.infusion-form input.text-input:focus {
