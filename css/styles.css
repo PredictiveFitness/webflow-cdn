@@ -181,6 +181,16 @@ form.infusion-form label.text-input {
   text-align: left !important;
 }
 
+form.infusion-form input.text-input::-moz-placeholder {
+  color: white;
+  font-style: italic;
+}
+
+form.infusion-form input.text-input::placeholder {
+  color: white;
+  font-style: italic;
+}
+
 form.infusion-form input.text-input {
   padding-left: 16px;
   height: 40px;
@@ -220,16 +230,6 @@ form.infusion-form input.text-input:focus, form.infusion-form textarea.text-inpu
   border-color: white;
   box-shadow: none;
   outline: none;
-}
-
-form.infusion-form input.text-input::-moz-placeholder {
-  color: white;
-  font-style: italic;
-}
-
-form.infusion-form input.text-input::placeholder {
-  color: white;
-  font-style: italic;
 }
 
 form.infusion-form input[type=checkbox] {
